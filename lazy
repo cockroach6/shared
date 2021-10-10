@@ -1,0 +1,10 @@
+#!/bin/sh
+
+rm -rf .git
+
+git init
+git remote add origin https://github.com/cockroach6/shared
+
+git add .
+git commit -m 'init commit'
+git push --force origin master
